@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9E688085F506E395D5F6B319 /* Pods_FM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81BB0BC886CC394159D83BA8 /* Pods_FM.framework */; };
 		B23A9486229CE0D7001FD309 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B23A9485229CE0D7001FD309 /* AppDelegate.m */; };
 		B23A9489229CE0D7001FD309 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B23A9488229CE0D7001FD309 /* ViewController.m */; };
 		B23A948C229CE0D7001FD309 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B23A948A229CE0D7001FD309 /* Main.storyboard */; };
@@ -14,9 +15,13 @@
 		B23A9491229CE0D8001FD309 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B23A9490229CE0D8001FD309 /* Assets.xcassets */; };
 		B23A9494229CE0D8001FD309 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B23A9492229CE0D8001FD309 /* LaunchScreen.storyboard */; };
 		B23A9497229CE0D8001FD309 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B23A9496229CE0D8001FD309 /* main.m */; };
+		B2D8136E22B7992D00A9AD47 /* ZZBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D8136D22B7992D00A9AD47 /* ZZBlock.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A7A743B4371ED0C9C1F0837 /* Pods-FM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FM.release.xcconfig"; path = "Pods/Target Support Files/Pods-FM/Pods-FM.release.xcconfig"; sourceTree = "<group>"; };
+		4AB6A92BFC8BF3DE3684394E /* Pods-FM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FM.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FM/Pods-FM.debug.xcconfig"; sourceTree = "<group>"; };
+		81BB0BC886CC394159D83BA8 /* Pods_FM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B23A9481229CE0D7001FD309 /* FM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B23A9484229CE0D7001FD309 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B23A9485229CE0D7001FD309 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -28,6 +33,8 @@
 		B23A9493229CE0D8001FD309 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B23A9495229CE0D8001FD309 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B23A9496229CE0D8001FD309 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B2D8136C22B7992D00A9AD47 /* ZZBlock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZBlock.h; sourceTree = "<group>"; };
+		B2D8136D22B7992D00A9AD47 /* ZZBlock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZBlock.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +42,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E688085F506E395D5F6B319 /* Pods_FM.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6B6FC2DB653F1CAA65407512 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				81BB0BC886CC394159D83BA8 /* Pods_FM.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B23A9478229CE0D7001FD309 = {
 			isa = PBXGroup;
 			children = (
 				B23A9483229CE0D7001FD309 /* FM */,
 				B23A9482229CE0D7001FD309 /* Products */,
+				CC4ED8D5544830AA3EE43FD5 /* Pods */,
+				6B6FC2DB653F1CAA65407512 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,8 +88,19 @@
 				B23A9495229CE0D8001FD309 /* Info.plist */,
 				B23A9496229CE0D8001FD309 /* main.m */,
 				B23A948D229CE0D7001FD309 /* FM.xcdatamodeld */,
+				B2D8136C22B7992D00A9AD47 /* ZZBlock.h */,
+				B2D8136D22B7992D00A9AD47 /* ZZBlock.m */,
 			);
 			path = FM;
+			sourceTree = "<group>";
+		};
+		CC4ED8D5544830AA3EE43FD5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4AB6A92BFC8BF3DE3684394E /* Pods-FM.debug.xcconfig */,
+				1A7A743B4371ED0C9C1F0837 /* Pods-FM.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -81,9 +110,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B23A949A229CE0D8001FD309 /* Build configuration list for PBXNativeTarget "FM" */;
 			buildPhases = (
+				8CF353C8885D468C855D5FBF /* [CP] Check Pods Manifest.lock */,
 				B23A947D229CE0D7001FD309 /* Sources */,
 				B23A947E229CE0D7001FD309 /* Frameworks */,
 				B23A947F229CE0D7001FD309 /* Resources */,
+				F390EC4A2C982FDDB6C621A0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -139,6 +170,44 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8CF353C8885D468C855D5FBF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FM-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F390EC4A2C982FDDB6C621A0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FM/Pods-FM-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FM/Pods-FM-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FM/Pods-FM-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B23A947D229CE0D7001FD309 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -147,6 +216,7 @@
 				B23A9489229CE0D7001FD309 /* ViewController.m in Sources */,
 				B23A9486229CE0D7001FD309 /* AppDelegate.m in Sources */,
 				B23A9497229CE0D8001FD309 /* main.m in Sources */,
+				B2D8136E22B7992D00A9AD47 /* ZZBlock.m in Sources */,
 				B23A948F229CE0D7001FD309 /* FM.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -224,7 +294,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -277,7 +347,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -287,6 +357,7 @@
 		};
 		B23A949B229CE0D8001FD309 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4AB6A92BFC8BF3DE3684394E /* Pods-FM.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -304,6 +375,7 @@
 		};
 		B23A949C229CE0D8001FD309 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A7A743B4371ED0C9C1F0837 /* Pods-FM.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

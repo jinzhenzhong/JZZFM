@@ -7,17 +7,24 @@
 //
 
 #import "ViewController.h"
+#import "ZZBlock.h"
 
 @interface ViewController ()
 
 @end
 
-@implementation ViewController
+@implementation ViewController  
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+   
 }
 
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    ZZBlock * block = [[ZZBlock alloc] init];
+    [block downloadWithBlock:^(NSString * _Nonnull str) {
+        NSLog(@"%@",str);
+    }];
+}
 
 @end
